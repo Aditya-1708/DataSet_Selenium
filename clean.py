@@ -57,7 +57,8 @@ for filename in os.listdir(FOLDER_PATH):
                     "description": desc_tag.get_text(strip=True) if desc_tag else None,
                     "tags": tags,
                     "posted": posted_tag.get_text(strip=True) if posted_tag else None,
-                    "logo": logo_tag['src'] if logo_tag else None
+                    "logo": logo_tag['src'] if logo_tag else None,
+                    "via":"Naukri.com"
                 }
 
                 grouped_jobs[category].append(job_data)
